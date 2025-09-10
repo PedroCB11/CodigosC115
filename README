@@ -1,0 +1,52 @@
+1. Explique o conceito de Web Service segundo a definição da Gartner. 
+2. Explique a função do protocolo SOAP e descreva a composição de seu envelope. 
+3. Quais são os três elementos principais de uma arquitetura de Web Service? 
+4. O que é WSDL e quais são os elementos básicos que o compõem? 
+5. Qual é a função do UDDI em Web Services? 
+6. O que é REST e quem o criou? 
+7. Qual é a função de um recurso (Resource) no REST e como ele é identificado?  
+8. O que é virtualização e quais são seus principais tipos de recursos virtualizados? 
+9. O que é um container Docker e o que ele empacota? 
+
+1)Para a Gartner, Web service é um componente de software acessível por outra aplicação por meio de protocolos e transportes ubíquos (como HTTP),
+  apoiado por um conjunto de padrões baseados em XML para definição de interface, descoberta e invocação remota.
+
+2)SOAP é um protocolo de comunicação baseado em XML que permite a troca de informações estruturadas entre sistemas distribuídos.
+    O envelope SOAP é composto por:
+    - Envelope: O elemento raiz que define o início e o fim de uma mensagem SOAP.
+    - Header: Um elemento opcional que contém informações de controle, como autenticação e transações.
+    - Body: O elemento obrigatório que contém a mensagem real ou os dados que estão sendo trocados.
+    - Fault: Um elemento opcional dentro do Body que fornece informações sobre erros que ocorreram durante o processamento da mensagem.
+
+3)Os três elementos principais de uma arquitetura de Web Service são:
+   - Provedor de Serviço (Service Provider): A entidade que oferece o serviço web.
+   - Consumidor de Serviço (Service Consumer): A entidade que utiliza o serviço web.
+   - Registro de Serviço (Service Registry): Um diretório onde os serviços web são registrados e podem ser descobertos pelos consumidores.
+
+4)WSDL (Web Services Description Language) é uma linguagem baseada em XML usada para descrever os serviços web, 
+  especificando como eles podem ser acessados e quais operações estão disponíveis.
+  Os elementos básicos que o compõem são, definitions (raiz), types (XSD), message, portType (operações abstratas), binding (protocolo/formato concretos), service (endpoints).
+
+5)UDDI (Universal Description, Discovery, and Integration) é um padrão para a publicação e descoberta de serviços web.
+   Sua função é atuar como um diretório onde os provedores de serviços podem registrar seus serviços e os consumidores podem encontrar esses serviços.
+
+6)REST (Representational State Transfer) é um estilo arquitetural para a construção de serviços web que utilizam os princípios e protocolos da web,
+   especialmente o HTTP. Foi criado por Roy Fielding em sua tese de doutorado em 2000.
+
+7)No REST, um recurso (Resource) é qualquer entidade que pode ser identificada e manipulada através de uma URI (Uniform Resource Identifier).
+   Ele é identificado por uma URI única, que pode representar dados, serviços ou qualquer outra coisa que possa ser acessada via web.
+
+8)Virtualização é a criação de versões virtuais de recursos computacionais (máquinas, SO, rede, storage), permitindo consolidar cargas e melhorar uso de hardware.
+ Tipos comuns de recursos virtualizados:Servidor/Hardware (VMs via hypervisor), Rede (SDN/overlay), Armazenamento, Desktop/Aplicação, Virtualização ao nível de SO (containers).
+
+9)Um container Docker é uma unidade padronizada que empacota aplicação + todas as dependências (código, runtime, bibliotecas,
+  ferramentas de sistema e configurações) para executar de forma consistente em qualquer ambiente.
+
+
+
+Alguns links de referencia:(nao achei todos que eu usei)
+https://www.gartner.com/en/information-technology/glossary/web-services
+https://www.w3schools.com/xml/xml_soap.asp
+https://www.ibm.com/docs/en/was-nd/8.5.5?topic=services-overview-version-3-uddi-registry
+https://en.wikipedia.org/wiki/Virtualization
+...
